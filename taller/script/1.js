@@ -1,0 +1,1078 @@
+// Base de datos de contenidos del taller basada en la infografía
+const infoCurso = {
+    inicio: `
+        <h2>Bienvenidos al Taller de Informática Básica</h2>
+
+    <div class="accordion">
+
+    <!-- Bienvenida -->
+    <button class="accordion-btn">
+        📌 Bienvenida al Curso
+    </button>
+    <div class="accordion-content">
+        <p>
+            Bienvenidos al Taller de Informática Básica con Software Libre.
+            Este curso busca desarrollar competencias digitales básicas
+            que permitan utilizar el computador de manera autónoma,
+            segura y eficiente en la vida cotidiana.
+        </p>
+    </div>
+
+    <!-- Perfil Docente -->
+    <button class="accordion-btn">
+        👨‍🏫 Perfil del Docente
+    </button>
+
+    <div class="accordion-content">
+
+        <div class="perfil-docente">
+
+            <img
+                src="img/docente.png"
+                alt="Fotografía del docente"
+                class="foto-docente">
+
+            <div class="datos-docente">
+
+                <h3>Maria Villadiego Diaz</h3>
+
+                <p>
+                    Educadora.
+                </p>
+
+                <ul>
+                    <li>Ingeniero de Sistemas</li>
+                    <li>Especialista en Gestion de Proyectos</li>
+                    <li>Docente de aula con mas de 15 años de experiencia</li>
+                    <li>Instructor SENATIC</li>
+                    
+                </ul>
+
+                <p>
+                    Aspirante a Magister en Educación, Universidad Pontificia Bolivariana.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Video -->
+    <button class="accordion-btn">
+        🎥 Video de Presentación
+    </button>
+
+    <div class="accordion-content">
+
+        <video controls width="100%">
+            <source src="/videos/Taller_de_Informática.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+    </div>
+
+    <!-- Metodología -->
+    <button class="accordion-btn">
+        📚 Metodología
+    </button>
+
+    <div class="accordion-content">
+
+        <ul>
+            <li>Aprendizaje participativo.</li>
+            <li>Prácticas guiadas.</li>
+            <li>Uso de software libre.</li>
+            <li>Aplicación a situaciones reales.</li>
+            <li>Evaluación continua.</li>
+        </ul>
+
+    </div>
+
+    <!-- Objetivos -->
+    <button class="accordion-btn">
+        🎯 Objetivos del Curso
+    </button>
+
+    <div class="accordion-content">
+
+        <p>
+            Capacitar a padres de familia en el uso adecuado
+            del computador y herramientas libres para fortalecer
+            sus competencias digitales.
+        </p>
+
+    </div>
+
+    <!-- Competencias -->
+    <button class="accordion-btn">
+        🏆 Competencias a Desarrollar
+    </button>
+
+    <div class="accordion-content">
+
+        <ul>
+            <li>Manejo básico del computador.</li>
+            <li>Creación de documentos.</li>
+            <li>Uso de presentaciones.</li>
+            <li>Manejo de hojas de cálculo.</li>
+            <li>Navegación segura en Internet.</li>
+        </ul>
+
+    </div>
+
+    <!-- Contacto -->
+    <button class="accordion-btn">
+        📞 Información de Contacto
+    </button>
+
+    <div class="accordion-content">
+
+        <p><strong>Correo:</strong> correo@institucion.edu.co</p>
+        <p><strong>WhatsApp:</strong> 3103280483</p>
+
+    </div>
+
+</div>
+    `,
+    u1: `
+        <h2>Unidad 1: Introducción a la Informática</h2>
+        <img src="img/1.png" 
+            alt="Introducción a la informática" 
+            style="width:100%;border-radius:12px;
+            margin-top:15px;margin-bottom:20px;">
+        <span class="badge"
+        style="background-color: var(--u1-color);">
+        Duración: 8 Horas | Evaluación: 10%
+        </span>
+
+        <p style="margin-top:15px;">
+        <strong>Software Libre:</strong> Linux (Sistema Operativo)
+        </p>
+
+        <div class="accordion">
+            <button class="accordion-btn">
+              📋 Información General
+         </button>
+
+    <div class="accordion-content">
+
+        <p><strong>Unidad:</strong> Introducción a la Informática</p>
+        <p><strong>Duración:</strong> 8 Horas</p>
+        <p><strong>Modalidad:</strong> Teórico - Práctica</p>
+        <p><strong>Herramienta:</strong> Linux</p>
+
+    </div>
+
+    <button class="accordion-btn">
+        🎯 Competencia
+    </button>
+
+    <div class="accordion-content">
+
+        <p>
+        Reconocer los componentes físicos y lógicos
+        de un sistema informático, identificando
+        su funcionamiento básico mediante el uso
+        de un sistema operativo libre.
+        </p>
+
+    </div>
+
+    <button class="accordion-btn">
+        🏆 Resultados de Aprendizaje
+    </button>
+
+    <div class="accordion-content">
+
+        <ul>
+            <li>Identificar componentes del hardware.</li>
+            <li>Diferenciar hardware y software.</li>
+            <li>Reconocer tipos de software.</li>
+            <li>Comprender el software libre.</li>
+            <li>Utilizar funciones básicas de Linux.</li>
+            <li>Manipular ventanas y elementos del escritorio.</li>
+        </ul>
+
+    </div>
+
+    <button class="accordion-btn">
+        📚 Parte Teórica
+    </button>
+
+    <div class="accordion-content">
+
+        <div class="accordion">
+
+            <!-- Tema 1 -->
+            <button class="accordion-btn">
+                🖥️ ¿Qué es un Computador?
+            </button>
+
+            <div class="accordion-content">
+
+                <img
+                src="img/computador.png"
+                class="imagen-tema">
+
+                <h3>Observa</h3>
+
+                <p>
+                    ¿Dónde ha utilizado usted un computador?
+                </p>
+
+                <ul>
+                    <li>🏦 Banco</li>
+                    <li>🏥 Hospital</li>
+                    <li>🏫 Escuela</li>
+                    <li>🏠 Casa</li>
+                </ul>
+
+                <h3>Aprende</h3>
+
+                <p>
+                    Un computador es una máquina electrónica que recibe datos,
+                    los procesa y genera información útil.
+                </p>
+
+                <div class="concepto-box">
+                    ENTRADA → PROCESO → SALIDA
+                </div>
+
+            </div>
+
+            <!-- Tema 2 -->
+
+            <button class="accordion-btn">
+                ⚙️ Hardware
+            </button>
+
+            <div class="accordion-content">
+
+                <img
+                src="img/hardware.png"
+                class="imagen-tema">
+
+                <h3>¿Qué es?</h3>
+
+                <p>
+                    El hardware corresponde a todas las partes físicas
+                    del computador.
+                </p>
+
+                <div class="grid-mini">
+
+                    <div class="card-mini">
+                        ⌨️<br>Teclado
+                    </div>
+
+                    <div class="card-mini">
+                        🖱️<br>Mouse
+                    </div>
+
+                    <div class="card-mini">
+                        🖥️<br>Monitor
+                    </div>
+
+                    <div class="card-mini">
+                        💾<br>USB
+                    </div>
+
+                </div>
+
+                <h3>Recuerda</h3>
+
+                <p>
+                    El hardware es el cuerpo del computador.
+                </p>
+
+            </div>
+
+            <!-- Tema 3 -->
+
+            <button class="accordion-btn">
+                💻 Software
+            </button>
+
+            <div class="accordion-content">
+
+                <img
+                src="img/software.png"
+                class="imagen-tema">
+
+                <h3>¿Qué es?</h3>
+
+                <p>
+                    El software son los programas que permiten
+                    que el computador funcione.
+                </p>
+
+                <div class="grid-mini">
+
+                    <div class="card-mini">
+                        🐧 Linux
+                    </div>
+
+                    <div class="card-mini">
+                        📝 Writer
+                    </div>
+
+                    <div class="card-mini">
+                        📊 Calc
+                    </div>
+
+                    <div class="card-mini">
+                        🌐 Firefox
+                    </div>
+
+                </div>
+
+                <p>
+                    El software es como el cerebro del computador.
+                </p>
+
+            </div>
+
+            <!-- Tema 4 -->
+
+            <button class="accordion-btn">
+                🐧 Sistema Operativo Linux
+            </button>
+
+            <div class="accordion-content">
+
+                <img
+                src="img/linux.png"
+                class="imagen-tema">
+
+                <h3>¿Qué hace Linux?</h3>
+
+                <ul>
+                    <li>Controla el hardware.</li>
+                    <li>Ejecuta programas.</li>
+                    <li>Administra archivos.</li>
+                    <li>Gestiona usuarios.</li>
+                </ul>
+
+                <div class="concepto-box">
+
+                    🔒 Seguro<br>
+                    💰 Gratuito<br>
+                    ⚡ Rápido<br>
+                    🌎 Libre
+
+                </div>
+
+            </div>
+
+            <!-- Tema 5 -->
+
+            <button class="accordion-btn">
+                🗂️ El Escritorio Linux
+            </button>
+
+            <div class="accordion-content">
+
+                <img
+                src="img/escritorio-linux.png"
+                class="imagen-tema">
+
+                <h3>Elementos principales</h3>
+
+                <ul>
+                    <li>📁 Carpetas</li>
+                    <li>🗑️ Papelera</li>
+                    <li>📋 Menú de aplicaciones</li>
+                    <li>📌 Barra de tareas</li>
+                </ul>
+
+            </div>
+
+            <!-- Tema 6 -->
+
+            <button class="accordion-btn">
+                🪟 Manejo de Ventanas
+            </button>
+
+            <div class="accordion-content">
+
+                <img
+                src="img/ventanas.png"
+                class="imagen-tema">
+
+                <h3>Botones de una ventana</h3>
+
+                <div class="concepto-box">
+
+                    ➖ Minimizar<br>
+                    ⬜ Maximizar<br>
+                    ❌ Cerrar
+
+                </div>
+
+                <p>
+                    Las ventanas permiten trabajar con programas
+                    y documentos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="accordion-content">
+
+        <h3>Hardware y Componentes</h3>
+
+        <ul>
+            <li>CPU.</li>
+            <li>Memoria RAM.</li>
+            <li>Dispositivos de entrada.</li>
+            <li>Dispositivos de salida.</li>
+            <li>Dispositivos de almacenamiento.</li>
+        </ul>
+
+        <h3>Software</h3>
+
+        <ul>
+            <li>Software de Sistema.</li>
+            <li>Software de Aplicación.</li>
+            <li>Software de Programación.</li>
+        </ul>
+
+        <h3>Sistema Operativo Libre</h3>
+
+        <ul>
+            <li>¿Qué es Linux?</li>
+            <li>Ventajas del software libre.</li>
+            <li>Distribuciones Linux.</li>
+        </ul>
+
+        <h3>Escritorio y Ventanas</h3>
+
+        <ul>
+            <li>Barra de tareas.</li>
+            <li>Menú de aplicaciones.</li>
+            <li>Iconos.</li>
+            <li>Carpetas.</li>
+            <li>Ventanas.</li>
+        </ul>
+
+    </div>
+
+    <button class="accordion-btn">
+        💻 Parte Práctica
+    </button>
+
+    <div class="accordion-content">
+
+        <h3>Práctica 1</h3>
+
+        <p>
+        Encender y apagar correctamente el equipo.
+        </p>
+
+        <h3>Práctica 2</h3>
+
+        <p>
+        Identificar monitor, teclado, mouse,
+        CPU y dispositivos USB.
+        </p>
+
+        <h3>Práctica 3</h3>
+
+        <p>
+        Explorar el escritorio Linux y personalizarlo.
+        </p>
+
+        <h3>Práctica 4</h3>
+
+        <p>
+        Abrir, mover, minimizar,
+        maximizar y cerrar ventanas.
+        </p>
+
+    </div>
+
+    <button class="accordion-btn">
+        📝 Evaluación
+    </button>
+
+    <div class="accordion-content">
+
+        <ul>
+            <li>Participación: 20%</li>
+            <li>Actividades Teóricas: 20%</li>
+            <li>Prácticas Realizadas: 40%</li>
+            <li>Producto Final: 20%</li>
+        </ul>
+
+    </div>
+
+    <button class="accordion-btn">
+        🏅 Producto Final
+    </button>
+
+    <div class="accordion-content">
+
+        <p>
+        Elaborar una ficha donde se identifiquen:
+        </p>
+
+        <ul>
+            <li>Componentes físicos del computador.</li>
+            <li>Funciones de cada componente.</li>
+            <li>Sistema operativo instalado.</li>
+            <li>Tres programas utilizados.</li>
+        </ul>
+
+    </div>
+
+</div>
+`,u2: `
+    <h2>Unidad 2: Procesador de Palabras</h2>
+    <img src="img/unidad2-writer.jpg" 
+         alt="Logo y entorno de LibreOffice Writer" 
+         style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+    <span class="badge" style="background-color: var(--u2-color);">
+        📝 Duración: 8 Horas | Evaluación: 25%
+    </span>
+    <p style="margin-top:15px;">
+        <strong>Software Libre:</strong> LibreOffice Writer (Procesador de palabras)
+    </p>
+
+    <div class="accordion">
+
+        <!-- 1. Información General -->
+        <button class="accordion-btn">
+            📋 Información General de la Unidad
+        </button>
+        <div class="accordion-content">
+            <p>En esta unidad aprenderemos a crear y editar documentos de texto profesionales, como cartas, currículos, tareas escolares y oficios, utilizando una herramienta gratuita y potente: LibreOffice Writer.</p>
+            <p><strong>Objetivo:</strong> Elaborar documentos de texto con formato, tablas e imágenes para mejorar la comunicación escrita en el ámbito personal y educativo.</p>
+        </div>
+
+        <!-- 2. Competencia -->
+        <button class="accordion-btn">
+            🎯 Competencia
+        </button>
+        <div class="accordion-content">
+            <p>Crear y editar documentos de texto utilizando las funciones básicas del procesador de palabras LibreOffice Writer, aplicando formato, organización y elementos visuales para producir comunicaciones efectivas.</p>
+        </div>
+
+        <!-- 3. Resultados de Aprendizaje -->
+        <button class="accordion-btn">
+            🏆 Resultados de Aprendizaje
+        </button>
+        <div class="accordion-content">
+            <ul>
+                <li>Identificar la interfaz de LibreOffice Writer y sus partes.</li>
+                <li>Aplicar formato de fuente (tamaño, color, estilo) y párrafo (alineación, interlineado).</li>
+                <li>Insertar y editar tablas para organizar información.</li>
+                <li>Insertar y ajustar imágenes dentro de un documento.</li>
+                <li>Guardar documentos en diferentes formatos (.odt, .pdf, .docx).</li>
+            </ul>
+        </div>
+
+        <!-- 4. Parte Teórica (con sub-acordeones) -->
+        <button class="accordion-btn">
+            📚 Parte Teórica: Fundamentos de Writer
+        </button>
+        <div class="accordion-content">
+            <div class="accordion">
+                
+                <!-- Tema 4.1 -->
+                <button class="accordion-btn">
+                    🖥️ ¿Qué es LibreOffice Writer?
+                </button>
+                <div class="accordion-content">
+                    <img src="img/writer-logo.png" class="imagen-tema" alt="Logo de LibreOffice Writer">
+                    <p>Writer es el procesador de palabras incluido en la suite ofimática LibreOffice. Es <strong>libre y gratuito</strong>, y te permite crear desde una simple nota hasta libros completos.</p>
+                    <div class="concepto-box">
+                        ✍️ Redactar cartas<br>
+                        📄 Hacer tareas<br>
+                        📑 Elaborar currículos<br>
+                        🖨️ Imprimir documentos
+                    </div>
+                </div>
+
+                <!-- Tema 4.2 -->
+                <button class="accordion-btn">
+                    🧭 Interfaz de Writer
+                </button>
+                <div class="accordion-content">
+                    <img src="img/interfaz-writer.png" class="imagen-tema" alt="Interfaz de LibreOffice Writer">
+                    <ul>
+                        <li><strong>Barra de título:</strong> Muestra el nombre del documento.</li>
+                        <li><strong>Menús:</strong> Archivo, Editar, Ver, Insertar, Formato, etc.</li>
+                        <li><strong>Barras de herramientas:</strong> Iconos para acciones rápidas (guardar, imprimir, negrita, etc.).</li>
+                        <li><strong>Regla:</strong> Para ajustar márgenes y tabulaciones.</li>
+                        <li><strong>Área de trabajo:</strong> Donde escribes el contenido.</li>
+                        <li><strong>Barra de estado:</strong> Muestra el número de página, idioma, etc.</li>
+                    </ul>
+                </div>
+
+                <!-- Tema 4.3 -->
+                <button class="accordion-btn">
+                    ✨ Formato de Texto y Párrafo
+                </button>
+                <div class="accordion-content">
+                    <img src="img/formato-texto.png" class="imagen-tema" alt="Ejemplo de formato de texto">
+                    <p><strong>Formato de fuente (caracteres):</strong></p>
+                    <ul>
+                        <li><strong>Negrita</strong> (Ctrl+N)</li>
+                        <li><em>Cursiva</em> (Ctrl+K)</li>
+                        <li><u>Subrayado</u> (Ctrl+U)</li>
+                        <li><span style="font-size: 1.2rem;">Tamaño</span> y <span style="color: blue;">color</span> de letra.</li>
+                    </ul>
+                    <p><strong>Formato de párrafo:</strong></p>
+                    <ul>
+                        <li>Alineación: Izquierda, Centro, Derecha, Justificar.</li>
+                        <li>Interlineado: Espacio entre líneas (sencillo, 1.5, doble).</li>
+                        <li>Sangría: Espacio antes de la primera línea.</li>
+                    </ul>
+                    <div class="concepto-box">
+                        💡 <strong>Tip:</strong> Selecciona el texto y luego aplica el formato.
+                    </div>
+                </div>
+
+                <!-- Tema 4.4 -->
+                <button class="accordion-btn">
+                    📊 Insertar y Editar Tablas
+                </button>
+                <div class="accordion-content">
+                    <img src="img/tablas-writer.png" class="imagen-tema" alt="Ejemplo de tabla en Writer">
+                    <p>Las tablas sirven para organizar información en filas y columnas (ej. horarios, facturas, listados).</p>
+                    <p><strong>¿Cómo insertar una tabla?</strong></p>
+                    <ol>
+                        <li>Menú <strong>Tabla → Insertar → Tabla</strong>.</li>
+                        <li>Elegir número de columnas y filas.</li>
+                        <li>Hacer clic en "Aceptar".</li>
+                    </ol>
+                    <p><strong>Editar tabla:</strong> Puedes añadir bordes, colores de fondo, combinar celdas, etc., desde el menú contextual (clic derecho).</p>
+                </div>
+
+                <!-- Tema 4.5 -->
+                <button class="accordion-btn">
+                    🖼️ Insertar y Ajustar Imágenes
+                </button>
+                <div class="accordion-content">
+                    <img src="img/imagenes-writer.png" class="imagen-tema" alt="Insertar imágenes en Writer">
+                    <p><strong>Pasos para insertar una imagen:</strong></p>
+                    <ol>
+                        <li>Ubicar el cursor donde va la imagen.</li>
+                        <li>Menú <strong>Insertar → Imagen → Desde archivo</strong>.</li>
+                        <li>Buscar la imagen en tu computador y seleccionarla.</li>
+                    </ol>
+                    <p><strong>Ajustar imagen:</strong> Al hacer clic en la imagen aparecen manejadores para cambiar su tamaño. También puedes hacer clic derecho → <strong>Anclar</strong> (como carácter, al párrafo o a la página) para controlar cómo se mueve con el texto.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Parte Práctica -->
+        <button class="accordion-btn">
+            💻 Parte Práctica: ¡Manos a la obra!
+        </button>
+        <div class="accordion-content">
+            <h3>📝 Ejercicio 1: Carta de presentación</h3>
+            <p>Crea un documento nuevo, escribe una carta de presentación personal (para un trabajo o para la escuela). Aplica negritas en el nombre, cursiva en la fecha y justifica el texto del cuerpo.</p>
+            
+            <h3>📊 Ejercicio 2: Horario de tareas</h3>
+            <p>Inserta una tabla de 6 columnas x 5 filas. En la primera fila escribe los días de la semana. En las siguientes filas, tus actividades diarias. Aplica un color de fondo a la fila de los días.</p>
+            
+            <h3>🖼️ Ejercicio 3: Documento con imagen</h3>
+            <p>Escribe un pequeño texto sobre tu familia o tu barrio e inserta una imagen relacionada (puede ser un dibujo o una foto). Ajusta la imagen para que quede centrada y con un tamaño adecuado.</p>
+            
+            <div class="concepto-box">
+                ✅ <strong>Recuerda:</strong> Guarda cada ejercicio con un nombre diferente usando <strong>Archivo → Guardar como</strong>. Usa el formato .odt (predeterminado) y también prueba guardar una copia como PDF.
+            </div>
+        </div>
+
+        <!-- 6. Evaluación -->
+        <button class="accordion-btn">
+            📝 Evaluación
+        </button>
+        <div class="accordion-content">
+            <ul>
+                <li><strong>Participación activa (20%):</strong> Realizar las prácticas en clase.</li>
+                <li><strong>Taller práctico (40%):</strong> Entregar los 3 ejercicios de la parte práctica, bien organizados y con el formato solicitado.</li>
+                <li><strong>Producto Final (40%):</strong> Elaboración del documento que se describe a continuación.</li>
+            </ul>
+        </div>
+
+        <!-- 7. Producto Final -->
+        <button class="accordion-btn">
+            🏅 Producto Final: Mi Recetario Familiar
+        </button>
+        <div class="accordion-content">
+            <p>Elaborar un documento que incluya:</p>
+            <ul>
+                <li><strong>Portada:</strong> Título "Mi Recetario Familiar", una imagen alusiva, tu nombre y fecha.</li>
+                <li><strong>Receta 1:</strong> Escribe la receta de un plato típico de tu región (ingredientes y preparación). Usa viñetas para los ingredientes y numeración para la preparación.</li>
+                <li><strong>Tabla de resumen:</strong> Crea una tabla con 3 columnas: "Receta", "Tiempo de preparación", "Dificultad (Alta/Media/Baja)". Llena la tabla con 3 recetas.</li>
+                <li><strong>Formato general:</strong> El documento debe tener un título principal con formato llamativo, interlineado 1.5 y márgenes de 2.5 cm.</li>
+            </ul>
+            <p><strong>Entrega:</strong> Guarda el archivo en formato PDF y súbelo a la plataforma o envíalo al correo del docente.</p>
+        </div>
+    </div>
+`,
+    u3: `
+        <h2>Unidad 3: Editor de Presentaciones</h2>
+        <img src="img/unidad3-impress.jpg" alt="LibreOffice Impress" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+        <span class="badge" style="background-color: var(--u3-color);">🎨 Duración: 8 Horas | Evaluación: 20%</span>
+        <p style="margin-top:15px;"><strong>Software Libre:</strong> LibreOffice Impress</p>
+
+        <div class="accordion">
+            <button class="accordion-btn">📋 Información General</button>
+            <div class="accordion-content">
+                <p>Aprenderemos a crear presentaciones visuales y atractivas para exponer ideas, proyectos o tareas escolares.</p>
+                <p><strong>Objetivo:</strong> Diseñar presentaciones efectivas usando diapositivas, imágenes, animaciones y transiciones.</p>
+            </div>
+
+            <button class="accordion-btn">🎯 Competencia</button>
+            <div class="accordion-content">
+                <p>Elaborar presentaciones digitales que comuniquen mensajes de manera clara y creativa, utilizando las herramientas básicas de Impress.</p>
+            </div>
+
+            <button class="accordion-btn">🏆 Resultados de Aprendizaje</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Reconocer la interfaz de Impress.</li>
+                    <li>Crear y organizar diapositivas.</li>
+                    <li>Insertar texto, imágenes, formas y otros objetos.</li>
+                    <li>Aplicar animaciones a objetos y transiciones entre diapositivas.</li>
+                    <li>Ejecutar una presentación en modo pantalla completa.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-btn">📚 Parte Teórica</button>
+            <div class="accordion-content">
+                <div class="accordion">
+                    <button class="accordion-btn">🎭 ¿Qué es Impress?</button>
+                    <div class="accordion-content">
+                        <p>Es el editor de presentaciones de LibreOffice. Te permite crear diapositivas con texto, imágenes, videos y animaciones. Es ideal para exposiciones orales.</p>
+                    </div>
+                    <button class="accordion-btn">🧭 Interfaz de Impress</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Panel de diapositivas:</strong> Muestra miniaturas de todas tus diapositivas.</li>
+                            <li><strong>Área de trabajo:</strong> Donde diseñas la diapositiva actual.</li>
+                            <li><strong>Panel de propiedades:</strong> Para cambiar estilos, animaciones y transiciones.</li>
+                            <li><strong>Barra de herramientas:</strong> Insertar formas, imágenes, cuadros de texto.</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn">➕ Crear y organizar diapositivas</button>
+                    <div class="accordion-content">
+                        <p><strong>Crear:</strong> Diapositiva → Nueva diapositiva o clic derecho en el panel → Nueva diapositiva.</p>
+                        <p><strong>Organizar:</strong> Arrastra las miniaturas para cambiar el orden. Usa "Eliminar diapositiva" para borrar.</p>
+                        <p><strong>Diseños:</strong> Puedes elegir entre "Título", "Título y contenido", "En blanco", etc.</p>
+                    </div>
+                    <button class="accordion-btn">🖼️ Insertar objetos</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Texto:</strong> Insertar → Cuadro de texto o usar el diseño predeterminado.</li>
+                            <li><strong>Imagen:</strong> Insertar → Imagen → Desde archivo.</li>
+                            <li><strong>Formas:</strong> En la barra inferior, elige rectángulos, flechas, diagramas de flujo.</li>
+                            <li><strong>Tablas y gráficos:</strong> Insertar → Tabla o Gráfico.</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn">✨ Animaciones y Transiciones</button>
+                    <div class="accordion-content">
+                        <p><strong>Animaciones (efectos en objetos):</strong> Selecciona un objeto → Presentación → Animación personalizada → Agregar efecto (Entrada, Énfasis, Salida).</p>
+                        <p><strong>Transiciones (efecto entre diapositivas):</strong> Selecciona una diapositiva → Presentación → Transición de diapositiva → Elige efecto y velocidad.</p>
+                        <div class="concepto-box">💡 Usa animaciones con moderación. Menos es más.</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion-btn">💻 Parte Práctica</button>
+            <div class="accordion-content">
+                <h3>📁 Ejercicio 1: Mi presentación personal</h3>
+                <p>Crea 3 diapositivas: (1) Título con tu nombre y foto, (2) Mis hobbies (texto e imagen), (3) Mi familia (texto y otra imagen). Aplica una transición suave entre diapositivas.</p>
+                
+                <h3>🎬 Ejercicio 2: Animando mi historia</h3>
+                <p>En una diapositiva en blanco, crea una pequeña historia con 3 objetos (ej. un sol, una nube, una flor). Anímalos para que aparezcan en orden al hacer clic.</p>
+                
+                <h3>📊 Ejercicio 3: Datos visuales</h3>
+                <p>Crea una diapositiva que muestre una tabla con las edades de 3 familiares y un gráfico de barras. (Insertar → Gráfico, luego edita los datos).</p>
+            </div>
+
+            <button class="accordion-btn">📝 Evaluación</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Participación en clase: 20%</li>
+                    <li>Ejercicios prácticos entregados: 30%</li>
+                    <li>Producto Final: 50%</li>
+                </ul>
+            </div>
+
+            <button class="accordion-btn">🏅 Producto Final: Exposición de mi comunidad</button>
+            <div class="accordion-content">
+                <p>Elaborar una presentación de <strong>mínimo 6 diapositivas</strong> sobre "Los atractivos de mi barrio o vereda". Debe incluir:</p>
+                <ul>
+                    <li>Diapositiva de título con nombre y lugar.</li>
+                    <li>Mínimo 4 diapositivas con imágenes y descripciones cortas (parques, tiendas, iglesia, escuela, río, etc.).</li>
+                    <li>Una diapositiva final con un mapa o croquis sencillo (puedes dibujarlo en una diapositiva usando formas).</li>
+                    <li>Transiciones suaves en todas las diapositivas.</li>
+                    <li>Animación en al menos 3 objetos.</li>
+                </ul>
+                <p>💡 <strong>Consejo:</strong> Ensaya tu presentación antes de mostrarla a la familia o al docente.</p>
+            </div>
+        </div>
+    `,
+
+    u4: `
+        <h2>Unidad 4: Hoja de Cálculo</h2>
+        <img src="img/unidad4-calc.jpg" alt="LibreOffice Calc" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+        <span class="badge" style="background-color: var(--u4-color);">📊 Duración: 8 Horas | Evaluación: 20%</span>
+        <p style="margin-top:15px;"><strong>Software Libre:</strong> LibreOffice Calc</p>
+
+        <div class="accordion">
+            <button class="accordion-btn">📋 Información General</button>
+            <div class="accordion-content">
+                <p>Las hojas de cálculo sirven para organizar números, hacer cuentas automáticas y crear gráficos. Son ideales para presupuestos familiares, control de gastos o inventarios.</p>
+                <p><strong>Objetivo:</strong> Aplicar operaciones básicas y crear tablas con fórmulas en Calc.</p>
+            </div>
+
+            <button class="accordion-btn">🎯 Competencia</button>
+            <div class="accordion-content">
+                <p>Manejar datos numéricos en una hoja de cálculo, usando fórmulas sencillas y gráficos para facilitar la toma de decisiones cotidianas.</p>
+            </div>
+
+            <button class="accordion-btn">🏆 Resultados de Aprendizaje</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Identificar celdas, filas, columnas y rangos.</li>
+                    <li>Ingresar y editar datos.</li>
+                    <li>Usar fórmulas básicas: SUMA, RESTA, MULTIPLICACIÓN, DIVISIÓN.</li>
+                    <li>Aplicar formato a números y texto.</li>
+                    <li>Crear gráficos de barras o pastel.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-btn">📚 Parte Teórica</button>
+            <div class="accordion-content">
+                <div class="accordion">
+                    <button class="accordion-btn">🧮 ¿Qué es Calc?</button>
+                    <div class="accordion-content">
+                        <p>Es la hoja de cálculo de LibreOffice. Organiza la información en una cuadrícula de <strong>celdas</strong> (intersección de fila y columna). Cada celda tiene una dirección como A1, B2, C5.</p>
+                    </div>
+                    <button class="accordion-btn">🧭 Interfaz de Calc</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Barra de fórmulas:</strong> Muestra y permite editar el contenido de la celda seleccionada.</li>
+                            <li><strong>Encabezados de columnas (Letras A, B, C...)</strong> y <strong>filas (Números 1, 2, 3...)</strong>.</li>
+                            <li><strong>Etiquetas de hojas:</strong> Abajo puedes tener múltiples hojas (Hoja1, Hoja2...).</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn">🔢 Fórmulas básicas</button>
+                    <div class="accordion-content">
+                        <p>Toda fórmula empieza con el signo <strong>=</strong>.</p>
+                        <ul>
+                            <li><strong>SUMA:</strong> =SUMA(A1:A5)  (suma los valores de A1 hasta A5)</li>
+                            <li><strong>RESTA:</strong> =A1-B1</li>
+                            <li><strong>MULTIPLICACIÓN:</strong> =A1*B1</li>
+                            <li><strong>DIVISIÓN:</strong> =A1/B1</li>
+                            <li><strong>PROMEDIO:</strong> =PROMEDIO(A1:A5)</li>
+                        </ul>
+                        <div class="concepto-box">✅ <strong>Tip:</strong> También puedes sumar con el botón Σ (AutoSuma) en la barra de herramientas.</div>
+                    </div>
+                    <button class="accordion-btn">📊 Crear gráficos</button>
+                    <div class="accordion-content">
+                        <ol>
+                            <li>Selecciona los datos (incluyendo los títulos de las columnas).</li>
+                            <li>Menú <strong>Insertar → Gráfico</strong>.</li>
+                            <li>Elige tipo de gráfico (barras, pastel, líneas).</li>
+                            <li>Agrega título y nombres a los ejes.</li>
+                            <li>Haz clic en "Finalizar".</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion-btn">💻 Parte Práctica</button>
+            <div class="accordion-content">
+                <h3>💰 Ejercicio 1: Presupuesto semanal</h3>
+                <p>Crea una tabla con: Producto, Valor unitario, Cantidad, Subtotal (Valor*Cantidad). Al final, suma todos los subtotales y muestra el gasto total.</p>
+                
+                <h3>📈 Ejercicio 2: Gráfico de gastos</h3>
+                <p>Usando los datos del ejercicio anterior, crea un gráfico de pastel que muestre qué producto representa el mayor gasto.</p>
+                
+                <h3>🧸 Ejercicio 3: Inventario de juguetes o útiles</h3>
+                <p>Haz una lista con 5 elementos, su cantidad actual y cantidad mínima. Usa formato condicional (Formato → Formato condicional) para resaltar en rojo los que estén por debajo del mínimo.</p>
+            </div>
+
+            <button class="accordion-btn">📝 Evaluación</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Prácticas en clase: 30%</li>
+                    <li>Taller de ejercicios: 30%</li>
+                    <li>Producto Final: 40%</li>
+                </ul>
+            </div>
+
+            <button class="accordion-btn">🏅 Producto Final: Control de gastos familiares</button>
+            <div class="accordion-content">
+                <p>Elabora un archivo de Calc que contenga:</p>
+                <ul>
+                    <li><strong>Hoja 1:</strong> Registro de ingresos y gastos de un mes (mínimo 10 movimientos) con columnas: Fecha, Descripción, Ingreso, Gasto.</li>
+                    <li><strong>Hoja 2:</strong> Resumen automático: Total ingresos, Total gastos, Saldo final (Ingresos - Gastos).</li>
+                    <li><strong>Hoja 3:</strong> Un gráfico de barras que compare los gastos por categoría (comida, transporte, servicios, etc.).</li>
+                </ul>
+                <p>💡 <strong>Tip:</strong> Usa =SUMA() para totalizar y referencias entre hojas (=Hoja1.A1).</p>
+            </div>
+        </div>
+    `,
+    u5: `
+        <h2>Unidad 5: Internet y Comunicación</h2>
+        <img src="img/unidad5-internet.jpg" alt="Internet y comunicación segura" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+        <span class="badge" style="background-color: var(--u5-color);">🌐 Duración: 8 Horas | Evaluación: 25%</span>
+        <p style="margin-top:15px;"><strong>Software Libre:</strong> Firefox (Navegador) y Thunderbird (Correo)</p>
+
+        <div class="accordion">
+            <button class="accordion-btn">📋 Información General</button>
+            <div class="accordion-content">
+                <p>Aprenderemos a navegar por Internet de forma segura, buscar información confiable y comunicarnos por correo electrónico. Habilidades esenciales para el mundo actual.</p>
+                <p><strong>Objetivo:</strong> Utilizar Internet como herramienta de información y comunicación responsablemente.</p>
+            </div>
+
+            <button class="accordion-btn">🎯 Competencia</button>
+            <div class="accordion-content">
+                <p>Navegar en la web y gestionar correo electrónico aplicando criterios de seguridad, veracidad de la información y normas de netiqueta.</p>
+            </div>
+
+            <button class="accordion-btn">🏆 Resultados de Aprendizaje</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Explicar qué es Internet y sus servicios principales.</li>
+                    <li>Navegar usando el navegador Firefox.</li>
+                    <li>Buscar información usando palabras clave y evaluar fuentes.</li>
+                    <li>Identificar riesgos en línea (phishing, fake news).</li>
+                    <li>Crear y usar una cuenta de correo electrónico.</li>
+                    <li>Redactar correos con netiqueta y adjuntar archivos.</li>
+                </ul>
+            </div>
+
+            <button class="accordion-btn">📚 Parte Teórica</button>
+            <div class="accordion-content">
+                <div class="accordion">
+                    <button class="accordion-btn">🌍 ¿Qué es Internet?</button>
+                    <div class="accordion-content">
+                        <p>Es una red mundial de computadoras conectadas entre sí. Permite compartir información, comunicarse y acceder a servicios como la web, correo electrónico, redes sociales, etc.</p>
+                    </div>
+                    <button class="accordion-btn">🦊 Navegador Firefox</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Barra de direcciones:</strong> Escribe una URL (ej. www.google.com) o una búsqueda.</li>
+                            <li><strong>Pestañas:</strong> Abre múltiples páginas en la misma ventana.</li>
+                            <li><strong>Marcadores (favoritos):</strong> Guarda páginas importantes.</li>
+                            <li><strong>Modo privado:</strong> No guarda historial ni cookies.</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn">🔍 Búsqueda efectiva</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Usa palabras clave concretas: "receta arepa colombiana" en lugar de "arepas".</li>
+                            <li>Usa comillas para frases exactas: "colegio Simón Bolívar".</li>
+                            <li>Evalúa la fuente: ¿quién escribió? ¿cuándo? ¿es un sitio oficial (.edu, .gov, o conocido)?</li>
+                        </ul>
+                        <div class="concepto-box">⚠️ Desconfía de títulos sensacionalistas o que pidan datos personales.</div>
+                    </div>
+                    <button class="accordion-btn">✉️ Correo electrónico y Netiqueta</button>
+                    <div class="accordion-content">
+                        <p><strong>Partes de un correo:</strong> Para (destinatario), Asunto (breve y claro), Cuerpo (mensaje), Adjuntos (archivos).</p>
+                        <p><strong>Netiqueta (normas de educación en línea):</strong></p>
+                        <ul>
+                            <li>Escribe un asunto descriptivo.</li>
+                            <li>Saluda y despídete cordialmente.</li>
+                            <li>No escribas TODO EN MAYÚSCULAS (equivale a gritar).</li>
+                            <li>Revisa la ortografía antes de enviar.</li>
+                            <li>No reenvíes cadenas ni información falsa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion-btn">💻 Parte Práctica</button>
+            <div class="accordion-content">
+                <h3>🔎 Ejercicio 1: Búsqueda guiada</h3>
+                <p>Busca en Internet: "alcaldía de [tu municipio] horario de atención". Encuentra la página oficial y anota el horario y la dirección.</p>
+                
+                <h3>📧 Ejercicio 2: Crear correo y enviar mensaje</h3>
+                <p>Si no tienes, crea una cuenta de correo gratuita (Gmail, Outlook o ProtonMail). Envía un correo al docente (simula) presentándote y adjuntando una imagen de tu comunidad.</p>
+                
+                <h3>🛡️ Ejercicio 3: Identificar noticias falsas</h3>
+                <p>Busca una noticia que parezca sospechosa (puede ser una cadena de WhatsApp o un titular raro). Aplica la regla: ¿quién la publica? ¿hay otras fuentes que lo confirmen? Escribe una breve conclusión.</p>
+            </div>
+
+            <button class="accordion-btn">📝 Evaluación</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Participación en búsquedas guiadas: 20%</li>
+                    <li>Envío de correo de prueba: 30%</li>
+                    <li>Producto Final: 50%</li>
+                </ul>
+            </div>
+
+            <button class="accordion-btn">🏅 Producto Final: Guía de navegación segura</button>
+            <div class="accordion-content">
+                <p>Elaborar un documento (en Writer) titulado "Consejos para navegar seguro en Internet". Debe incluir:</p>
+                <ul>
+                    <li>Portada con título, tu nombre y fecha.</li>
+                    <li>5 recomendaciones para proteger la información personal (contraseñas, qué no publicar).</li>
+                    <li>3 señales para identificar una noticia falsa o un fraude.</li>
+                    <li>Un párrafo sobre la importancia de la netiqueta en el correo electrónico.</li>
+                    <li>Un enlace (URL) a una página confiable sobre ciberseguridad para padres de familia.</li>
+                </ul>
+                <p><strong>Entrega:</strong> Guarda el documento como PDF y envía por correo electrónico (puede ser simulado) al docente.</p>
+            </div>
+        </div>
+    `
+};
+
+// Lógica de interacción
+document.addEventListener("DOMContentLoaded", () => {
+    const contenedor = document.getElementById("contenido-dinamico");
+    const enlacesMenu = document.querySelectorAll(".nav-item");
+
+    // Cargar contenido inicial (Inicio)
+    contenedor.innerHTML = infoCurso.inicio;
+    inicializarAccordion();
+    
+
+    // Manejar clics en el menú lateral
+    enlacesMenu.forEach(enlace => {
+        enlace.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            // Quitar clase activa del menú anterior y ponérsela al actual
+            enlacesMenu.forEach(item => item.classList.remove("active"));
+            enlace.classList.add("active");
+
+            // Obtener la unidad seleccionada y renderizarla
+            const unidad = enlace.getAttribute("data-unidad");
+            contenedor.innerHTML = infoCurso[unidad];
+            inicializarAccordion();
+        });
+    });
+    function inicializarAccordion(){
+
+    const botones =
+        document.querySelectorAll(".accordion-btn");
+
+    botones.forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            const contenido =
+                btn.nextElementSibling;
+
+            contenido.classList.toggle("active");
+
+        });
+
+    });
+
+}
+});
