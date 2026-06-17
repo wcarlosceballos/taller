@@ -1,11 +1,13 @@
 // Base de datos de contenidos del taller basada en la infografía
 const infoCurso = {
     inicio: `
-        <h2>Bienvenidos al Taller de Informática Básica</h2>
-
+    
     <div class="accordion">
-
     <!-- Bienvenida -->
+         <img src="img/0.png" alt="Introducción a la informática" 
+            style="width:100%;border-radius:12px;
+            margin-top:15px;margin-bottom:20px;"> 
+
     <button class="accordion-btn">
         📌 Bienvenida al Curso
     </button>
@@ -128,7 +130,7 @@ const infoCurso = {
 
     <div class="accordion-content">
 
-        <p><strong>Correo:</strong> correo@institucion.edu.co</p>
+        <p><strong>Correo:</strong> mayos10@gmail.com</p>
         <p><strong>WhatsApp:</strong> 3103280483</p>
 
     </div>
@@ -398,7 +400,7 @@ const infoCurso = {
 `,
 u2: `
     <h2>Unidad 2: Procesador de Palabras</h2>
-    <img src="img/unidad2-writer.jpg" 
+    <img src="img/2.png" 
          alt="Logo y entorno de LibreOffice Writer" 
          style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
     <span class="badge" style="background-color: var(--u2-color);">
@@ -606,7 +608,7 @@ u2: `
 `,
     u3: `
         <h2>Unidad 3: Editor de Presentaciones</h2>
-        <img src="img/unidad3-impress.jpg" alt="LibreOffice Impress" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+        <img src="img/3.png" alt="LibreOffice Impress" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
         <span class="badge" style="background-color: var(--u3-color);">🎨 Duración: 8 Horas | Evaluación: 20%</span>
         <p style="margin-top:15px;"><strong>Software Libre:</strong> LibreOffice Impress</p>
 
@@ -754,7 +756,7 @@ u2: `
 
     u4: `
         <h2>Unidad 4: Hoja de Cálculo</h2>
-        <img src="img/unidad4-calc.jpg" alt="LibreOffice Calc" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+        <img src="img/4.png" alt="LibreOffice Calc" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
         <span class="badge" style="background-color: var(--u4-color);">📊 Duración: 8 Horas | Evaluación: 20%</span>
         <p style="margin-top:15px;"><strong>Software Libre:</strong> LibreOffice Calc</p>
 
@@ -901,7 +903,7 @@ u2: `
     `,
     u5: `
         <h2>Unidad 5: Internet y Comunicación</h2>
-        <img src="img/unidad5-internet.jpg" alt="Internet y comunicación segura" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
+        <img src="img/5.png" alt="Internet y comunicación segura" style="width:100%; border-radius:12px; margin-top:15px; margin-bottom:20px;">
         <span class="badge" style="background-color: var(--u5-color);">🌐 Duración: 8 Horas | Evaluación: 25%</span>
         <p style="margin-top:15px;"><strong>Software Libre:</strong> Firefox (Navegador) y Thunderbird (Correo)</p>
 
